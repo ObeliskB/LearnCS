@@ -12,12 +12,19 @@ namespace LearnCS
         {
             Console.WriteLine("Hello World!");
             int a = 5, b = 2;
-            Console.WriteLine($"a + b = {a + b}");
             // Addition
-            /* jkjkjk
-               kllkklkl
-               kllkkljkl
+            Console.WriteLine($"a + b = {a + b}");
+            /* 
+               Multi-line comment
             */
+            // Arrays
+            string[] cars = new string[3];
+            cars[0] = "Ford";
+            cars[1] = "BMW";
+            cars[2] = "Toyota";
+            Console.WriteLine($"First car: {cars[0]}");
+            Console.WriteLine($"Second car: {cars[1]}");
+            Console.WriteLine($"Third car: {cars[2]}");
         }
     }
 }
