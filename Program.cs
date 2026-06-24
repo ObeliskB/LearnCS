@@ -8,6 +8,8 @@ namespace LearnCS
 {
     internal class Program
     {
+        int x = 20;
+        int y = 7;
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -106,6 +108,27 @@ namespace LearnCS
             {
                 Console.WriteLine($"Car: {cars[i]}");
             }
+
+            // Functions
+            string Hello(string name = "Noname")
+            {
+                return $"Hello, {name}!";
+            }
+
+            /* string h = Hello();
+            Console.WriteLine(h); */
+
+            Console.WriteLine(Hello("John"));
+            Console.WriteLine(Hello());
+
+            void NumberCompare(int x, int y)
+            {
+                if (x > y) Console.WriteLine($"{x} is greater than {y}");
+                else if (x < y) Console.WriteLine($"{x} is less than {y}");
+                else Console.WriteLine($"{x} is equal to {y}");
+            }
+
+            NumberCompare(5, 10);
         }
     }
 }
